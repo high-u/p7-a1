@@ -1,0 +1,20 @@
+{
+  "name": "p7-a1",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "fix": "biome format --write",
+    "check": "biome lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^3.0.31",
+    "ai": "^6.0.97",
+    "hono": "^4.12.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.4",
+    "@types/bun": "latest",
+    "typescript": "^5.9.3"
+  }
+}
