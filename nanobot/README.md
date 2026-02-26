@@ -40,10 +40,50 @@
 
 ```
 
-## 環境構築
+## Env
 
 ```bash
 uv python pin 3.11
 uv sync --extra dev
 source .venv/bin/activate
+```
+
+## Setup
+
+```bash
+# In container
+mkdir -p /workspaces/p7-a1/.nanobot-data
+ln -sf /workspaces/p7-a1/.nanobot-data ~/.nanobot
+nanobot onboard 
+```
+
+.nanobot-data/config.json
+
+```json
+{
+    "agents": {
+        "defaults": {
+            "workspace": "~/.nanobot/workspace",
+            "model": "qwen35-35b-a3b",
+            "provider": "custom",
+            "maxTokens": 65536,
+            "temperature": 0.7,
+            "maxToolIterations": 50,
+            "memoryWindow": 100
+        }
+    },
+    "providers": {
+        "custom": {
+            "apiKey": "dummy",
+            "apiBase": "http://host.containers.internal:8080/v1",
+            "extraHeaders": null
+        }
+    }
+}
+```
+
+```
+nanobot status
+
+nanobot agent
 ```
