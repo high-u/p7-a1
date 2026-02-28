@@ -14,7 +14,7 @@ bunx --bun @biomejs/biome init
 ## x
 
 ```bash
-curl -X POST http://localhost:3000/chat \                                                         
-  -H "Content-Type: application/json" \                                                                                                                                                        
-  -d '{"prompt": "slack-gif-creator: 「LGTM」という文字が書かれた動くGIFを作って。作ったら lgtm.gif という名前で保存して"}'
+curl -X POST http://localhost:3000/chat \
+  -H "Content-Type: application/json" \
+  -d '{"prompt": "\"LGTM\" という文字が書かれた動く GIF を作って"}'
 ```
