@@ -3,6 +3,7 @@
 !.gitignore
 !.env.example
 !.agents
+!.devcontainer
 
 # deps
 node_modules/
