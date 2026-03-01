@@ -4,6 +4,7 @@
 !.env.example
 !.agents
 !.devcontainer
+.devcontainer/devcontainer.json
 
 # deps
 node_modules/
